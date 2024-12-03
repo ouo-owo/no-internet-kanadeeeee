@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 30px;
+  max-height: 150px;
+}
+
+h1 {
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 23px;
+  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
+  max-width: 600px;
+}
+
+#score-board {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Press Start 2P', sans-serif;
+  color: rgb(154, 160, 166);
+  max-width: 600px;
+  font-size: 14px;
+}
+
+.high-score {
+  margin: 0 10px;
+}
+
+.score {
+  color: rgb(83, 83, 83);
+}
+
+.start-screen {
+  color: rgb(83, 83, 83);
+  font-size: 14px;
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gap {
+  margin: 0 10px;
+}
+
+#reset_btn {
+  width: 40px;
+  margin-top: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  width: 300%;
+  --left: 0;
+  position: absolute; 
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino {
+  width: 50px;
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  width: 20px;
+  /* --left: 0; */
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  bottom: 0;
+}
